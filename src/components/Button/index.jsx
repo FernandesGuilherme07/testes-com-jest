@@ -1,11 +1,7 @@
 import './styles.css';
 
-import { Component } from 'react';
-
-export class Buttom extends Component {
-  render() {
-    const { text, onClick, disabled } = this.props;
-
+export const Button = ({ text, onClick, disabled }) => {
+   
     return (
       <button 
         className='button' 
@@ -15,5 +11,4 @@ export class Buttom extends Component {
         {text}
       </button>
     );
-  }
 }
